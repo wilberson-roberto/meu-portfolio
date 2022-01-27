@@ -6,14 +6,18 @@ body {
     background: linear-gradient(60deg, #fff8e6, #e9d8a6);
 }
 
+html, body, #capa {
+    height: 100%;
+}
+
 /* Formatação do topo
 -------------------------------------------------*/
 
-header {
+nav {
     background: #001219;
 }
 
-h1 {
+#logo {
     background: url(../img/logo.png) no-repeat;
     width: 350px;
     text-indent: -9000px;
@@ -34,7 +38,7 @@ h1 {
 #menu-principal a::after {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 0%;
     left: 50%;
     background: #ae2012;
@@ -49,6 +53,26 @@ h1 {
 
 .navbar-toggler {
     background: #ee9b00;
+}
+
+/* Formatação da capa
+-------------------------------------------------*/
+
+.foto {
+    border: 20px solid #ae2012;
+    border-radius: 100%;
+}
+
+.dev {
+    font-family: Impact;
+    color: #005f73;
+}
+
+.web {
+    font-family: Impact;
+    letter-spacing: 0.5rem;
+    font-size: 10rem;
+    color: #ae2012;
 }
 
 /* Breakpoints responsivos
