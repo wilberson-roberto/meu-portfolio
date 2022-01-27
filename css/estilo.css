@@ -3,6 +3,52 @@
 
 body {
     font: 16px Helvetica, Arial, sans-serif;
+    background: linear-gradient(60deg, #fff8e6, #e9d8a6);
+}
+
+/* Formatação do topo
+-------------------------------------------------*/
+
+header {
+    background: #001219;
+}
+
+h1 {
+    background: url(../img/logo.png) no-repeat;
+    width: 350px;
+    text-indent: -9000px;
+    margin: 0;
+}
+
+#menu-principal a {
+    color: #e9d8a6;
+    padding: 10px;
+    margin: 10px 20px;
+    position: relative;
+}
+
+#menu-principal a:hover {
+    color: #fff;
+}
+
+#menu-principal a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    background: #ae2012;
+    bottom: 0;
+    transition: 0.3s ease-out;
+}
+
+#menu-principal a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.navbar-toggler {
+    background: #ee9b00;
 }
 
 /* Breakpoints responsivos
@@ -26,6 +72,6 @@ body {
 
 @media (min-width: 1200px) { /* Extra large */
     .container {
-        width: 1440px;
+        width: 1920px;
     }
 }
