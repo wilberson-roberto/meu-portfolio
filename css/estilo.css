@@ -2,8 +2,8 @@
 -------------------------------------------------*/
 
 body {
-    font: 16px Helvetica, Arial, sans-serif;
-    background: linear-gradient(60deg, #fff8e6, #e9d8a6);
+    font: 16px Helvetica, 'Times New Roman', serif;
+    background: #dbd5c9;
 }
 
 html, body, #capa {
@@ -13,15 +13,45 @@ html, body, #capa {
 /* Formatação do topo
 -------------------------------------------------*/
 
-nav {
-    background: #001219;
+.linha-vertical {
+    background-color: #edeae4;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    right: 36%;
 }
 
-#logo {
-    background: url(../img/logo.png) no-repeat;
-    width: 350px;
+.linha-horizontal {
+    background-color: #edeae4;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 75%;
+    right: 0;
+}
+
+nav {
+    background: #001219e7;
+}
+
+#logo h1 {
+    background: url(../img/logo1.png) no-repeat;
+    width: 60px;
     text-indent: -9000px;
     margin: 0;
+    margin-top: -10px;
+}
+
+.inicio {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #e9d8a6;
+    position: relative;
 }
 
 #menu-principal a {
@@ -31,11 +61,11 @@ nav {
     position: relative;
 }
 
-#menu-principal a:hover {
+#menu-principal a:hover, .inicio:hover {
     color: #fff;
 }
 
-#menu-principal a::after {
+#menu-principal a::after, .inicio::after {
     content: "";
     position: absolute;
     height: 3px;
@@ -46,7 +76,7 @@ nav {
     transition: 0.3s ease-out;
 }
 
-#menu-principal a:hover::after {
+#menu-principal a:hover::after, .inicio:hover::after {
     left: 0;
     width: 100%;
 }
@@ -58,21 +88,37 @@ nav {
 /* Formatação da capa
 -------------------------------------------------*/
 
-.foto {
-    border: 20px solid #ae2012;
-    border-radius: 100%;
+#capa {
+    background: url(../img/topo2.jpg) no-repeat top center;
 }
 
-.dev {
-    font-family: Impact;
-    color: #005f73;
+.nome {
+    margin-top: 420px;
 }
 
-.web {
-    font-family: Impact;
-    letter-spacing: 0.5rem;
-    font-size: 10rem;
+.ola {
     color: #ae2012;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: -20px;
+    font-size: 1.2rem;
+}
+
+.wr {
+    color: #fff;
+    font-family: 'Times New Roman';
+    position: relative;
+    margin: 20px;
+}
+
+.designer {
+    background: #ae2012;
+    padding: 10px;
+    color: #fff;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-left: 10px;
 }
 
 /* Breakpoints responsivos
