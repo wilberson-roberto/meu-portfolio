@@ -82,7 +82,7 @@ nav {
 }
 
 .navbar-toggler {
-    background: #ee9b00;
+    background: #ae2012;
 }
 
 /* Formatação da capa
@@ -100,7 +100,7 @@ nav {
     color: #ae2012;
     font-weight: bold;
     margin-left: 10px;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
     font-size: 1.2rem;
 }
 
@@ -121,19 +121,67 @@ nav {
     margin-left: 10px;
 }
 
+/* Formatação do sobre
+-------------------------------------------------*/
+
+#sobre p {
+    text-align: justify;
+}
+
 /* Breakpoints responsivos
 -------------------------------------------------*/
 
 @media (max-width: 575.98px) { /* Extra small */
+    .display-3 {
+        font-size: 2.5rem;
+    }
     
+    .nome {
+        margin-top: 440px;
+    }
+
+    .linha-vertical {
+        right: 26%;
+    }
+
+    .ola {
+        font-size: 1rem;
+        margin-bottom: -20px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { /* Small */
+    .display-3 {
+        font-size: 3rem;
+    }
     
+    .nome {
+        margin-top: 450px;
+    }
+
+    .linha-vertical {
+        right: 26%;
+    }
+
+    .ola {
+        font-size: 1rem;
+        margin-bottom: -20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { /* Medium */
-    
+    .display-3 {
+        font-size: 3.5rem;
+    }
+
+    .nome {
+        margin-top: 440px;
+    }
+
+    .ola {
+        font-size: 1rem;
+        margin-bottom: -20px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { /* Large */
