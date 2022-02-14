@@ -4,35 +4,20 @@
 body {
     font: 16px Helvetica, 'Times New Roman', serif;
     background: #dbd5c9;
+    animation-name: body;
+    animation-duration: 4s;
 }
 
-html, body, #capa {
+html, body, #capa, #galeria {
     height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Formatação do topo
 -------------------------------------------------*/
-
-.linha-vertical {
-    background-color: #edeae4;
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    left: auto;
-    top: 0;
-    bottom: 0;
-    right: 36%;
-}
-
-.linha-horizontal {
-    background-color: #edeae4;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    top: 75%;
-    right: 0;
-}
 
 nav {
     background: #001219e7;
@@ -88,20 +73,40 @@ nav {
 /* Formatação da capa
 -------------------------------------------------*/
 
+#capa .linha-vertical {
+    background-color: #edeae4;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    right: 36%;
+}
+
+#capa .linha-horizontal {
+    background-color: #edeae4;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 75%;
+    right: 0;
+}
+
 #capa {
     background: url(../img/topo2.jpg) no-repeat top center;
+    animation-name: fundo-topo;
+    animation-duration: 4s;
+}
+
+@keyframes fundo-topo {
+    0% {background-size: 200%;}
+    50% {background-size: 146%;}
 }
 
 .nome {
-    margin-top: 420px;
-}
-
-.ola {
-    color: #ae2012;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-bottom: -30px;
-    font-size: 1.2rem;
+    margin-top: 400px;
 }
 
 .wr {
@@ -109,6 +114,15 @@ nav {
     font-family: 'Times New Roman';
     position: relative;
     margin: 20px;
+    text-shadow: 3px 3px 3px #000;
+    animation-name: movimentoh1;
+    animation-duration: 4s;
+}
+
+@keyframes movimentoh1 {
+    0% {left: 800px; opacity: 0;}
+    50% {opacity: 100%;}
+    100% {left: 0px;}
 }
 
 .designer {
@@ -116,6 +130,7 @@ nav {
     padding: 10px;
     color: #fff;
     display: inline;
+    position: relative;
     font-weight: bold;
     letter-spacing: 5px;
     margin-left: 10px;
@@ -124,8 +139,19 @@ nav {
 /* Formatação do sobre
 -------------------------------------------------*/
 
+#sobre {
+    padding: 100px 50px;
+}
+
 #sobre p {
     text-align: justify;
+}
+
+/* Formatação da galeria
+-------------------------------------------------*/
+
+#galeria {
+    background: #002438;
 }
 
 /* Breakpoints responsivos
