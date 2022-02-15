@@ -138,8 +138,8 @@ nav {
 }
 
 @keyframes designer {
-    0% {rotate: 360deg;}
-    100% {rotate: 0deg;}
+    0% {opacity: 0;; left: -50%;}
+    100% {left: 0;}
 }
 
 /* Formatação do sobre
