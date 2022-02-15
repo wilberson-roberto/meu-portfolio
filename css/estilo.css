@@ -100,8 +100,8 @@ nav {
 }
 
 @keyframes fundo-topo {
-    0% {background-size: 200%;}
-    50% {background-size: 146%;}
+    0% {background-size: 140%;}
+    100% {background-size: 101%;}
 }
 
 .nome {
@@ -133,6 +133,13 @@ nav {
     font-weight: bold;
     letter-spacing: 5px;
     margin-left: 10px;
+    animation-name: designer;
+    animation-duration: 4s;
+}
+
+@keyframes designer {
+    0% {rotate: 360deg;}
+    100% {rotate: 0deg;}
 }
 
 /* Formatação do sobre
@@ -148,10 +155,10 @@ nav {
 
 #sobre .circulo {
     border: 2px solid #ae2012;
-    width: 700px;
-    height: 700px;
+    width: 52%;
+    height: 100%;
     position: absolute;
-    left: 20px;
+    left: 10%;
     border-radius: 100%;
 }
 
@@ -162,6 +169,12 @@ nav {
     position: absolute;
     top: 90%;
     right: 0;
+    animation-name: linha-sobre;
+    animation-duration: 4s;
+}
+
+@keyframes linha-sobre {
+    0% {top: 100%;}
 }
 
 #sobre p {
@@ -198,7 +211,7 @@ h3 {
     }
     
     .nome {
-        margin-top: 440px;
+        margin-top: 450px;
     }
 
     .linha-vertical {
@@ -208,6 +221,16 @@ h3 {
     .ola {
         font-size: 1rem;
         margin-bottom: -20px;
+    }
+
+    #sobre .circulo {
+        width: 95%;
+        left: 2%;
+    }
+
+    @keyframes fundo-topo {
+        0% {background-size: 500%;}
+        100% {background-size: 398%;}
     }
 }
 
@@ -228,6 +251,16 @@ h3 {
         font-size: 1rem;
         margin-bottom: -20px;
     }
+
+    #sobre .circulo {
+        width: 95%;
+        left: 2%;
+    }
+
+    @keyframes fundo-topo {
+        0% {background-size: 400%;}
+        100% {background-size: 328%;}
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { /* Medium */
@@ -243,14 +276,34 @@ h3 {
         font-size: 1rem;
         margin-bottom: -20px;
     }
+
+    @keyframes fundo-topo {
+        0% {background-size: 300%;}
+        100% {background-size: 253%;}
+    }
+
+    #sobre .circulo {
+        left: 5%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { /* Large */
-    
+    .nome {
+        margin-top: 420px;
+    }
+
+    @keyframes fundo-topo {
+        0% {background-size: 230%;}
+        100% {background-size: 190%;}
+    }
+
+    #sobre .circulo {
+        left: 2%;
+    }
 }
 
 @media (min-width: 1200px) { /* Extra large */
-    .container {
-        width: 1920px;
+    .nome {
+        margin-top: 420px;
     }
 }
