@@ -160,6 +160,13 @@ nav {
     position: absolute;
     left: 10%;
     border-radius: 100%;
+    animation-name: circulo;
+    animation-duration: 4s;
+    animation-delay: 6s;
+}
+
+@keyframes circulo {
+    0% {left: 100%;}
 }
 
 #sobre .linha-horizontal {
@@ -171,6 +178,7 @@ nav {
     right: 0;
     animation-name: linha-sobre;
     animation-duration: 4s;
+    animation-delay: 6s;
 }
 
 @keyframes linha-sobre {
@@ -279,10 +287,11 @@ h3 {
 
     @keyframes fundo-topo {
         0% {background-size: 300%;}
-        100% {background-size: 253%;}
+        100% {background-size: 202%;}
     }
 
     #sobre .circulo {
+        width: 85%;
         left: 5%;
     }
 }
