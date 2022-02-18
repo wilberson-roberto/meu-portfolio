@@ -261,7 +261,41 @@ h3 {
 }
 
 #galeria img {
-    border: 5px solid #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.foto-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.foto-container:hover .overlay {
+    opacity: 1;
+}
+
+.texto {
+    color: #fff;
+    font: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /* Breakpoints responsivos
