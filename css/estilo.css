@@ -153,6 +153,10 @@ nav {
     padding: 80px 0;
 }
 
+#sobre img {
+    border: 5px solid #ae2012;
+}
+
 #sobre .circulo {
     border: 2px solid #ae2012;
     width: 52%;
@@ -195,6 +199,56 @@ nav {
 #galeria {
     background: #002438;
     position: relative;
+}
+
+#galeria .linha-vertical {
+    background: #edeae4;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    animation-name: linha-vertical-galeria;
+    animation-duration: 4s;
+    animation-delay: 12s;
+}
+
+@keyframes linha-vertical-galeria {
+    0% {left: 0;}
+}
+
+#galeria .linha-horizontal {
+    background: #edeae4;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 85%;
+    animation-name: linha-horizontal-galeria;
+    animation-duration: 4s;
+    animation-delay: 12s;
+}
+
+@keyframes linha-horizontal-galeria {
+    0% {top: 100%;}
+}
+
+#galeria .circulo {
+    border: 2px solid #edeae4;
+    border-radius: 100%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation-name: circulo-galeria;
+    animation-duration: 4s;
+    animation-delay: 12s;
+}
+
+@keyframes circulo-galeria {
+    0% {width: 100px; height: 100px; opacity: 0;}
+    75% {opacity: 100%;}
 }
 
 #galeria h2 {
