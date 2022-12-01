@@ -2,4 +2,4 @@
 Desenvolvedor Full Stack e Designer
 
 ### Link Funcional:
-<a href="https://wilberson-roberto.github.io/meu-portfolio">Portfolio</a>
+<a href="https://wilberson-roberto.github.io/meu-portfolio" target="_blank">Portfolio</a>
